@@ -1,0 +1,8 @@
+@use './_header';
+@use './_intro';
+@use './projects';
+@use './footer';
+@use './minus';
+main {
+  padding-top: 80px; 
+}

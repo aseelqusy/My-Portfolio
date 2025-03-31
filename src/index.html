@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="../dist/main.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__logo">
+      <img src="/src/img/A.png" alt="Logo" />
+    </div>
+
+    <div class="menu">
+      <input type="checkbox" id="menu-toggle" class="menu__toggle" />
+      <label for="menu-toggle" class="menu__toggle-label">
+        <span class="menu__bar"></span>
+      </label>
+
+      <nav class="menu__navigation">
+        <ul class="menu__menu-item-list">
+          <li class="menu__menu-item"><a class="menu__menu-link" href="#">Projects</a></li>
+          <li class="menu__menu-item"><a class="menu__menu-link" href="#">Skills</a></li>
+          <li class="menu__menu-item"><a class="menu__menu-link" href="#">Resume</a></li>
+          <li class="menu__menu-item"><a class="menu__menu-link" href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Resume</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="intro">
+      <div class="intro__left">
+        <img src="/src/img/headshot.png" alt="Headshot Photo" />
+      </div>
+      <div class="intro__right">
+        <h1>Welcome to My Portfolio</h1>
+        <p>My name is Aseel, and I am a computer engineering student at an-Najah national university
+        , currently I am learning front end develping, I am passionate about coding and I am always eager to learn new things . </p>
+        <div class="intro__buttons">
+          <button>View Resume</button>
+          <button>Contact Me</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects">
+      <h2 class="projects__title">Latest Projects</h2>
+      <div class="projects__grid">
+        <div class="custom-cursor"></div>
+
+        <div class="project-card">
+          <img src="/src/img/sailor.png" alt="React Project" />
+          <h3>Anime World</h3>
+          <p>A stylish anime website built with React and SCSS, animations</p>
+          <div class="tech-icons">
+            <img src="/src/img/react.png" alt="React" />
+            <img src="/src/img/sass.png" alt="SCSS" />
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="/src/img/e-commerce.png" alt="E-Commerce Site" />
+          <h3>E-Commerce</h3>
+          <p>An e-commerce site for electronics built using HTML, CSS, and JavaScript</p>
+          <div class="tech-icons">
+            <img src="/src/img/java-script.png" alt="JavaScript" />
+            <img src="/src/img/html.png" alt="HTML5" />
+            <img src="/src/img/css.png" alt="CSS3" />
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="/src/img/game-controller.png" alt="Flutter App" />
+          <h3>Simple Video Game</h3>
+          <p>A simple mobile game developed in Flutter and Dart</p>
+          <div class="tech-icons">
+            <img src="/src/img/flutter.png" alt="Flutter" />
+            <img src="/src/img/dart.png" alt="Dart" />
+          </div>
+        </div>
+      </div>
+
+      <div class="projects__button">
+        <button>View All Projects</button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__content">
+      <p>© Aseel 2025 | All rights reserved.</p>
+      <div class="footer__socials">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

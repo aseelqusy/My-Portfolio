@@ -1,0 +1,22 @@
+@use '../utils/utils';
+@use '../utils/variables' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: utils.$font-family-base;
+  font-size: utils.$font-size-base;
+  background-color: utils.$background-color;
+  color: utils.$dark-color;
+  line-height: 1.6;
+
+}
+
+*:focus-visible {
+  outline: 2px dashed $primary-color;
+  outline-offset: 4px;
+}

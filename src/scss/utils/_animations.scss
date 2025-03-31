@@ -1,0 +1,66 @@
+@use './variables' as *;
+
+@keyframes bio-image {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bio-content {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes minimize-header {
+  0% {
+    background: transparent;
+    padding: 1rem 0;
+    box-shadow: none;
+  }
+  100% {
+    padding: 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  }
+}
+
+@keyframes minimize-header-links {
+  0% {
+    color: $dark-color;
+  }
+  100% {
+    color: $light-color;
+  }
+}
+
+@keyframes parallax-banner {
+  to {
+    transform: translateY(calc(var(--speed) * 20rem));
+  }
+}
+
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float-glow {
+  2% {
+    transform: translateY(-15px) scale(1.05) rotateX(1.5deg) rotateY(1.5deg);
+  }
+  100% {
+    transform: translateY(-18px) scale(1.07) rotateX(2deg) rotateY(2deg);
+  }
+}

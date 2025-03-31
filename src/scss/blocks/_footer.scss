@@ -1,0 +1,35 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+
+.footer {
+  background-color: $dark-color;
+  color: $light-color;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 6rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+  &__content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  p {
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    opacity: 0.85;
+  }
+
+  &__socials {
+    a {
+      color: $light-color;
+      margin: 0 0.5rem;
+      font-size: 1.2rem;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}
